@@ -15,7 +15,7 @@
 	Username: <input type="text" name="username"> <br>
 	<div id="username_error"></div><br>
 	Customer name: <input type="text" name="name"><br>
-	
+	email: <input type="text" name="email"><br>
 	Password: <input type="password" name="password" id="password"> 
 	<br>
 	Re-Type Password: <input type="password" name="retry-password" id="retry-password"> 
