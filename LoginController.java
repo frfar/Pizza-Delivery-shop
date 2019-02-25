@@ -29,9 +29,9 @@ public class LoginController extends HttpServlet {
 		Customer c = customerDao.validateCustomer(login);
 		
 		if(submitType.equals("login") && c!=null && c.getName()!=null){
-			request.setAttribute("message", "Hello HHGHKHKHK "+c.getName());
-			request.setAttribute("message1", "Please order from the following menu:"+
-					"1)Cheese Pizza\n2Pepperoni Pizza\n3Italian Pizza\n4Supereme Pizza\nMake Your Own");
+			request.setAttribute("message", "Hello "+c.getName()+ " Welcome to the Pizza Delivery Shop");
+			//request.setAttribute("message1", "Please order from the following menu:"+
+					//"1)Cheese Pizza\n2Pepperoni Pizza\n3Italian Pizza\n4Supereme Pizza\nMake Your Own");
 			
 			request.getRequestDispatcher("welcome.jsp").forward(request, response);
 		}else if(submitType.equals("register")){
@@ -49,3 +49,4 @@ public class LoginController extends HttpServlet {
 	}
 
 }
+
